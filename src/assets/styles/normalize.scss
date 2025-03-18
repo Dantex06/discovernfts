@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+p {
+  height: fit-content;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--background-default);
+}
