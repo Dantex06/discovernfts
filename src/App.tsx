@@ -1,11 +1,13 @@
-import Header from "./widgets/Header/Header.tsx";
+import {Header} from "@/widgets/Header/Header.tsx";
+import {Hero} from "@/widgets/Hero/Hero.tsx";
 
 
 const App = () => {
     return (
-        <div >
+        <>
             <Header/>
-        </div>
+            <Hero/>
+        </>
     );
 };
 

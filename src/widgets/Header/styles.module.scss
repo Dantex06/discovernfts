@@ -14,8 +14,9 @@
     .logo {
       display: flex;
       align-items: center;
-      width: 58px;
-      height: 58px;
+      justify-content: center;
+      width: 53px;
+      height: 53px;
     }
 
     .navigations {
@@ -24,7 +25,7 @@
       align-items: center;
       gap: 52px;
 
-      p {
+      .navItem {
         font-family: Inter-medium, sans-serif;
         font-weight: bold;
         font-size: 17px;

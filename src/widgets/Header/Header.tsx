@@ -5,7 +5,7 @@ import Logo from '@/assets/icons/Logo.svg'
 
 import styles from './styles.module.scss'
 
-const Header = () => {
+export const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.leftSide}>
@@ -13,10 +13,10 @@ const Header = () => {
                 <Logo/>
             </div>
             <div className={styles.navigations}>
-                <p>DISCOVER</p>
-                <p>CREATORS</p>
-                <p>SELL</p>
-                <p>STATS</p>
+                <p className={styles.navItem}>DISCOVER</p>
+                <p className={styles.navItem}>CREATORS</p>
+                <p className={styles.navItem}>SELL</p>
+                <p className={styles.navItem}>STATS</p>
             </div>
             </div>
             <Button theme={ButtonThemes.DARK} size={ButtonSizes.BIG}>
@@ -25,5 +25,3 @@ const Header = () => {
         </div>
     );
 };
-
-export default Header;
