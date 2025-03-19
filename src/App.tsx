@@ -1,5 +1,6 @@
 import {Header} from "@/widgets/Header/Header.tsx";
 import {Hero} from "@/widgets/Hero/Hero.tsx";
+import { Weekly } from '@/widgets/Weekly/Weekly.tsx'
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
         <>
             <Header/>
             <Hero/>
+            <Weekly/>
         </>
     );
 };

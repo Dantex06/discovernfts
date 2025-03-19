@@ -1,5 +1,6 @@
 .button {
   flex: none;
+  border: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -10,11 +11,15 @@
   transition: background-color 0.3s, color 0.3s;
 
   &.default {
+    width: 180px;
+    height: 60px;
     padding: 10px 20px;
     font-size: 16px;
   }
 
   &.small {
+    width: 138px;
+    height: 60px;
     padding: 8px 16px;
     font-size: 14px;
   }
@@ -59,10 +64,8 @@
   }
 
   &.light_border {
-    background-color: red;
-    color: #fff;
-    border: 2px solid var(--black);
-
+    background: transparent;
+    border: 1.5px solid var(--black);
     &:hover {
       background-color: #fff;
       color: #333;

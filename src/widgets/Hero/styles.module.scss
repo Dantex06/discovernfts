@@ -1,5 +1,6 @@
 .hero {
-  margin-top: 110px;
+  padding-top: 110px;
+  padding-bottom: 123px;
   position: relative;
 
   .heroContainer {
@@ -15,11 +16,19 @@
         color: var(--default-black);
       }
 
+      .buttonGroup {
+        display: flex;
+        gap: 23px;
+      }
+
       .description {
         font-family: Inter, sans-serif;
         font-weight: 100;
         color: var(--text-gray);
         width: 500px;
+        margin-top: 15px;
+        margin-bottom: 45px;
+        line-height: 28px;
 
         .highlight {
           font-family: Inter-medium, sans-serif;
@@ -53,8 +62,10 @@
       position: relative;
 
       .heroImages {
-        width: 566px;
+        width: 780px;
         display: flex;
+        gap: 38px;
+        margin-left: 48px;
 
         .heroImage1 {
           position: relative;
@@ -69,10 +80,10 @@
           &::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: 55px;
             left: 0;
             right: 0;
-            height: 45px;
+            height: 95px;
             background: rgb(168, 201, 202);
             filter: blur(25px);
             z-index: -1;
@@ -85,15 +96,8 @@
           display: flex;
           flex-direction: column;
 
-          .heroArrow {
-            margin-left: 22px;
-          }
 
           .image2 {
-            position: absolute;
-            left: -145px;
-            bottom: -100px;
-            z-index: -2;
             width: 320px;
             height: 320px;
             border-radius: 25px;
@@ -105,8 +109,9 @@
     }
 
     .heroBackground {
+      z-index: -1;
       position: absolute;
-      top: 0;
+      top: 55px;
       right: -45px;
     }
   }
