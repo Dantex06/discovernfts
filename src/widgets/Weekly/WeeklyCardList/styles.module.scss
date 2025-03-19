@@ -1,0 +1,29 @@
+.weeklyCardList {
+  overflow: hidden;
+  margin-top: 100px;
+
+  .list {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    gap: 28px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+
+
+    .swiper-wrapper {
+      display: flex;
+    }
+  }
+
+
+  .list:active {
+    cursor: grabbing;
+  }
+
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+}

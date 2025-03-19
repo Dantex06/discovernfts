@@ -1,15 +1,28 @@
+import { useEffect, useState } from 'react';
+import { AnimatedNumber } from '@/components/motion-primitives/animated-number';
+
 import {Button} from "@/components/Button/Button.tsx";
 
 import {ButtonSizes, ButtonThemes} from "@/components/Button/types.ts";
 
 import HeroArrow from "@/assets/icons/HeroArrow.svg"
 import HeroBackground from "@/assets/icons/HeroBackground.svg"
-import HeroImage1 from "@/assets/images/HeroImage1.jpg"
-import HeroImage2 from "@/assets/images/HeroImage2.jpg"
+import HeroImage1 from "@/assets/images/hero/HeroImage1.jpg"
+import HeroImage2 from "@/assets/images/hero/HeroImage2.jpg"
 
 import styles from './styles.module.scss'
 
 export const Hero = () => {
+    const [artWorks, setArtWorks] = useState(100);
+    const [creators, setCreators] = useState(100);
+    const [collections, setCollections] = useState(10);
+
+    useEffect(() => {
+        setArtWorks(430);
+        setCreators(159);
+        setCollections(87);
+    }, []);
+
     return (
         <div className={styles.hero}>
             <div className={styles.heroContainer}>
@@ -31,15 +44,37 @@ export const Hero = () => {
                     </div>
                     <div className={styles.features}>
                         <div className={styles.feature}>
-                            <h3 className={styles.featureNumber}>430K+</h3>
+                            <h3 className={styles.featureNumber}>
+                                <AnimatedNumber
+                                className={styles.featureNumber}
+                                springOptions={{
+                                    bounce: 0,
+                                    duration: 4000,
+                                }}
+                                value={artWorks}
+                            />K+</h3>
                             <p className={styles.featureSecondary}>Art Works</p>
                         </div>
                         <div className={styles.feature}>
-                            <h3 className={styles.featureNumber}>159K+</h3>
+                            <h3 className={styles.featureNumber}><AnimatedNumber
+                                className={styles.featureNumber}
+                                springOptions={{
+                                    bounce: 0,
+                                    duration: 3000,
+                                }}
+                                value={creators}
+                            />K+</h3>
                             <p className={styles.featureSecondary}>Creators</p>
                         </div>
                         <div className={styles.feature}>
-                            <h3 className={styles.featureNumber}>87K+</h3>
+                            <h3 className={styles.featureNumber}><AnimatedNumber
+                                className={styles.featureNumber}
+                                springOptions={{
+                                    bounce: 0,
+                                    duration: 2000,
+                                }}
+                                value={collections}
+                            />K+</h3>
                             <p className={styles.featureSecondary}>Collections</p>
                         </div>
 

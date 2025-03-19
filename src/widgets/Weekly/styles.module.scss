@@ -1,7 +1,9 @@
 .weekly {
+  background: var(--background-gray);
+  padding: 70px 0 90px 0;
   .title {
-    font-family: Poppins-bold, sans-serif;
-    font-weight: 600;
+    text-align: center;
+    font-family: Poppins-semibold, sans-serif;
     font-size: 45px;
     color: var(--gray-lighter);
   }

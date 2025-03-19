@@ -1,0 +1,72 @@
+.weeklyCard {
+  overflow: hidden;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background: var(--white);
+  border-radius: 23px;
+
+  .image {
+    margin: 14px 14px 18px 14px;
+    width: 252px;
+    height: 252px;
+    border-radius: 23px;
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 28px;
+    right: 23px;
+    width: 116px;
+    height: 37px;
+    background: rgba(128, 128, 128, 0.35);
+    border-radius: 9px;
+
+    .time {
+      font-family: Poppins-medium, sans-serif;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .title {
+    font-family: Poppins-semibold, sans-serif;
+    font-size: 21px;
+    color: var(--default-black);
+    font-weight: 600;
+    margin: 0 18px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 18px 20px 18px;
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .priceText {
+        font-family: Poppins, sans-serif;
+        font-size: 14px;
+        color: var(--light-blue);
+        letter-spacing: 0.5px;
+      }
+
+      .priceInfo {
+        display: flex;
+        align-items: center;
+
+        .priceNumber {
+          font-family: Poppins-medium, sans-serif;
+          font-weight: bold;
+          color: var(--default-black)
+        }
+      }
+    }
+  }
+}

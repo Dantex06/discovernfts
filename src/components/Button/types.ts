@@ -12,6 +12,7 @@ export enum ButtonThemes {
 }
 
 export interface IButton {
-    theme: ButtonThemes
-    size: ButtonSizes
+    theme: ButtonThemes;
+    size: ButtonSizes;
+    className?: string;
 }

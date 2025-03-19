@@ -9,11 +9,21 @@
 }
 
 @font-face {
+  font-family: Poppins;
+  src: url('./Poppins-regular.ttf');
+}
+
+@font-face {
   font-family: Poppins-bold;
-  src: url('./Poppins-Bold.ttf');
+  src: url('Poppins-bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-semibold;
   src: url('./Poppins-semibold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-medium;
+  src: url('./Poppins-medium.ttf');
 }
