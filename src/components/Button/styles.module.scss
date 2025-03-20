@@ -72,3 +72,14 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .button {
+
+    &.big {
+      width: 142px;
+      height: 41px;
+      font-size: 11px;
+    }
+  }
+}
