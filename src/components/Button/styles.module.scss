@@ -35,7 +35,7 @@
 
   &.dark {
     background-color: #141416;
-    color: #fff;
+    color: var(--white);
 
     &:hover {
       background-color: #555;
@@ -54,12 +54,12 @@
 
   &.dark_border {
     background-color: transparent;
-    color: #333;
-    border: 2px solid #333;
+    color: var(--white);
+    border: 2px solid var(--white);
 
     &:hover {
       background-color: #333;
-      color: #fff;
+      color: var(--white);
     }
   }
 
@@ -67,7 +67,7 @@
     background: transparent;
     border: 1.5px solid var(--black);
     &:hover {
-      background-color: #fff;
+      background-color: var(--white);
       color: #333;
     }
   }

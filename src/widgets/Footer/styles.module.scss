@@ -1,0 +1,60 @@
+.footer {
+  height: 345px;
+  width: 100%;
+  background: var(--default-black);
+  padding: 90px 90px 90px 80px;
+
+  .unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .title {
+        font-family: Poppins-semibold, sans-serif;
+        font-size: 30px;
+        color: var(--white);
+      }
+    }
+
+    .navigation {
+      display: flex;
+      gap: 70px;
+
+      .navigateText {
+        font-family: Inter-medium, sans-serif;
+        font-size: 18px;
+        color: var(--text-gray-light);
+      }
+    }
+  }
+
+  .line {
+    margin: 25px 0 55px 0;
+    background: var(--line-color);
+    height: 1px;
+    width: 100%;
+  }
+
+  .lower {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    .lowerInfo {
+      font-family: Inter-Medium, sans-serif;
+      font-size: 17px;
+      color: var(--text-gray);
+    }
+    .icons {
+      display: flex;
+      height: 25px;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+}
