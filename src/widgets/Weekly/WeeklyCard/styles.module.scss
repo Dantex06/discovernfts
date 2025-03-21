@@ -70,3 +70,56 @@
     }
   }
 }
+
+
+@media screen and (min-width: 1921px) {
+  .weeklyCard {
+    width: 18vw;
+    height: 25vw;
+    border-radius: 1.5vw;
+
+    .image {
+      margin: 1vw;
+      width: 16vw;
+      height: 16vw;
+      border-radius: 1.5vw;
+    }
+
+    .timer {
+      top: 2vw;
+      right: 1.5vw;
+      width: 7vw;
+      height: 2.5vw;
+      border-radius: 0.6vw;
+
+      .time {
+        font-size: 1vw;
+      }
+    }
+
+    .title {
+      font-size: 1.3vw;
+      margin: 0 1.2vw;
+    }
+
+    .info {
+      margin: 1vw 1.2vw 1.5vw 1.2vw;
+
+      .price {
+        .priceText {
+          font-size: 0.9vw;
+        }
+
+        .priceInfo {
+          svg {
+            height: 1vw;
+            width: 1vw;
+          }
+          .priceNumber {
+            font-size: 1.1vw;
+          }
+        }
+      }
+    }
+  }
+}

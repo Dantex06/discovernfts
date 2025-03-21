@@ -27,20 +27,25 @@ export const Hero = () => {
         <div className={styles.hero}>
             <div id="hero" className={styles.heroContainer}>
                 <div className={styles.heroText}>
+                    <div className={styles.line}></div>
+                    <div className={styles.over}>
+                        <div className={styles.overLine}></div>
+                        <p className={styles.overText}>OVER 1M CREATORS</p>
+                    </div>
                     <motion.h1
                         className={styles.title}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
+                        initial={{opacity: 0, y: 20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{delay: 0.2, duration: 0.5}}
                     >
                         Discover And Create NFTs
                     </motion.h1>
 
                     <motion.p
                         className={styles.description}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.5 }}
+                        initial={{opacity: 0, y: 20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{delay: 0.4, duration: 0.5}}
                     >
                         Discover, Create and Sell NFTs On Our NFT Marketplace With Over Thousands Of NFTs And Get
                         a <span className={styles.highlight}>$20 bonus.</span>
@@ -48,23 +53,24 @@ export const Hero = () => {
 
                     <motion.div
                         className={styles.buttonGroup}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6, duration: 0.5 }}
+                        initial={{opacity: 0, y: 20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{delay: 0.6, duration: 0.5}}
                     >
-                        <Button theme={ButtonThemes.DARK} size={ButtonSizes.DEFAULT}>
+                        <Button className={styles.exploreButton} theme={ButtonThemes.DARK} size={ButtonSizes.DEFAULT}>
                             EXPLORE MORE
                         </Button>
-                        <Button theme={ButtonThemes.LIGHT_BORDER} size={ButtonSizes.SMALL}>
+                        <Button className={styles.createButton} theme={ButtonThemes.LIGHT_BORDER}
+                                size={ButtonSizes.SMALL}>
                             CREATE NFT
                         </Button>
                     </motion.div>
 
                     <motion.div
                         className={styles.features}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.8, duration: 0.5 }}
+                        initial={{opacity: 0, y: 20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{delay: 0.8, duration: 0.5}}
                     >
                         <div className={styles.feature}>
                             <h3 className={styles.featureNumber}>
@@ -112,40 +118,41 @@ export const Hero = () => {
                     <div className={styles.heroImages}>
                         <motion.div
                             className={styles.heroImage1}
-                            initial={{ opacity: 0, x: 100 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 1, duration: 0.5 }}
+                            initial={{opacity: 0, x: 100}}
+                            animate={{opacity: 1, x: 0}}
+                            transition={{delay: 1, duration: 0.5}}
                         >
-                            <img className={styles.image1} src={HeroImage1} alt="heroImage" />
+                            <img className={styles.image1} src={HeroImage1} alt="heroImage"/>
                         </motion.div>
 
                         <motion.div
                             className={styles.heroImage2}
-                            initial={{ opacity: 0, x: 100 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 1.2, duration: 0.5 }}
+                            initial={{opacity: 0, x: 100}}
+                            animate={{opacity: 1, x: 0}}
+                            transition={{delay: 1.2, duration: 0.5}}
                         >
                             <motion.div
                                 className={styles.heroArrow}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 1.5, duration: 1.5 }}
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{delay: 1.5, duration: 1.5}}
                             >
-                                <HeroArrow />
+                                <HeroArrow/>
                             </motion.div>
-                            <img className={styles.image2} src={HeroImage2} alt="heroImage" />
+                            <img className={styles.image2} src={HeroImage2} alt="heroImage"/>
+                            <motion.div
+                                className={styles.heroBackground}
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{delay: 1.5, duration: 0.5}}
+                            >
+                                <HeroBackground/>
+                            </motion.div>
                         </motion.div>
                     </div>
                 </div>
 
-                <motion.div
-                    className={styles.heroBackground}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 0.5 }}
-                >
-                    <HeroBackground />
-                </motion.div>
+
             </div>
         </div>
     );

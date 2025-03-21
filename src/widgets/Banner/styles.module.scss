@@ -71,5 +71,149 @@
       }
     }
   }
+}
 
+@media screen and (min-width: 1921px)  {
+  .banner {
+    padding: 8vw 5vw 10vw 5vw;
+
+    .block {
+      height: 20vw;
+      border-radius: 2vw;
+
+      .info {
+        padding: 3vw 0 3vw 4vw;
+
+        .title {
+          font-size: 3vw;
+        }
+
+        .description {
+          font-size: 1.3vw;
+          margin-top: 1vw;
+        }
+
+        .buttons {
+          gap: 2vw;
+          margin-top: 3vw;
+
+          .button {
+            width: 15vw;
+            height: 8vh;
+          }
+
+          .buttonText {
+            font-size: 1.4vw;
+          }
+        }
+      }
+
+      .imageBlock {
+        width: 25vw;
+        margin-right: 1.5vw;
+
+        .image {
+          width: 24vw;
+          height: 16vw;
+          border-radius: 1.2vw;
+        }
+
+        &::after {
+          filter: blur(2vw);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    padding: 115px 30px 250px 30px;
+
+
+    .block {
+      display: block;
+      position: relative;
+
+      .info {
+        padding: 20px 30px 80px 30px;
+        text-align: center;
+
+        .buttons{
+          justify-content: center;
+
+        }
+      }
+
+      .imageBlock {
+        position: absolute;
+        left: 50%;
+        bottom: -190px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+
+    .block {
+      height: auto;
+      .info {
+
+        .title {
+          font-size: 22px;
+        }
+
+        .buttons{
+
+          .button {
+            width: 90px;
+            height: 30px;
+            padding: 5px;
+          }
+
+          .buttonText {
+            font-size: 10px;
+          }
+        }
+
+        .description {
+          font-size: 15px;
+        }
+
+        .buttons {
+          margin-top: 25px;
+
+          .button {
+            border-radius: 6px;
+          }
+        }
+      }
+      .imageBlock {
+        width: 260px;
+        height: 130px;
+        bottom: -90px;
+
+        .image {
+          width: 250px;
+          height: 130px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: rgb(168, 201, 202);
+          filter: blur(35px);
+          opacity: 0.6;
+          z-index: 1;
+        }
+      }
+    }
+  }
 }

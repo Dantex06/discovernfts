@@ -3,12 +3,40 @@
   padding-bottom: 123px;
   position: relative;
   overflow: hidden;
+
   .heroContainer {
     padding: 0 90px;
     display: flex;
     justify-content: space-between;
 
     .heroText {
+      position: relative;
+
+      .line {
+        position: absolute;
+        width: 135px;
+        height: 0.7px;
+        background: var(--line-hero-color);
+        top: -7px;
+        border-radius: 1px;
+      }
+
+      .over {
+        display: none;
+
+        .overLine {
+          width: 34px;
+          height: 0.6px;
+          background: var(--line-hero-color);
+        }
+
+        .overText {
+          font-family: Poppins-semibold, sans-serif;
+          font-size: 9px;
+          color: var(--line-hero-color)
+        }
+      }
+
       .title {
         font-family: Poppins-bold, sans-serif;
         font-size: 75px;
@@ -96,6 +124,12 @@
           display: flex;
           flex-direction: column;
 
+          .heroBackground {
+            z-index: -1;
+            position: absolute;
+            top: -55px;
+            right: -45px;
+          }
 
           .image2 {
             width: 320px;
@@ -108,11 +142,383 @@
       }
     }
 
-    .heroBackground {
-      z-index: -1;
-      position: absolute;
-      top: 135px;
-      right: -45px;
+
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2559px) {
+  .hero {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+
+    .heroContainer {
+      padding: 0 5vw;
+
+      .heroText {
+        .line {
+          width: 7vw;
+        }
+
+        .title {
+          font-size: 4vw;
+          width: 30vw;
+        }
+
+        .description {
+          width: 25vw;
+          font-size: 1.2vw;
+          line-height: 2vw;
+        }
+
+        .buttonGroup {
+          .exploreButton {
+            width: 12vw;
+            height: 6vh;
+            font-size: 1.5rem;
+          }
+          .createButton {
+            width: 10vw;
+            height: 6vh;
+            font-size: 1.5rem;
+          }
+        }
+
+        .features {
+          gap: 4vw;
+
+          .feature {
+            .featureNumber {
+              font-size: 2vw;
+            }
+
+            .featureSecondary {
+              font-size: 1vw;
+            }
+          }
+        }
+      }
+
+      .heroHeader {
+        .heroImages {
+          width: 40vw;
+          gap: 2vw;
+          margin-left: 2.5vw;
+
+          .heroImage1 {
+            .image1 {
+              width: 20vw;
+              height: 20vw;
+            }
+
+            &::after {
+              height: 5vw;
+              bottom: 3vw;
+            }
+          }
+
+          .heroImage2 {
+            .image2 {
+              width: 16vw;
+              height: 16vw;
+            }
+
+            .heroBackground {
+              top: -3vw;
+              right: -2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .hero {
+    padding-top: 20vh;
+    padding-bottom: 15vh;
+
+    .heroContainer {
+      padding: 0 5vw;
+
+      .heroText {
+        .line {
+          width: 7vw;
+        }
+
+        .title {
+          font-size: 5vw;
+          width: 35vw;
+        }
+
+        .description {
+          width: 30vw;
+          font-size: 1.5vw;
+          line-height: 2.5vw;
+        }
+
+        .buttonGroup {
+          .exploreButton {
+            width: 12vw;
+            height: 7vh;
+            font-size: 1.5rem;
+          }
+          .createButton {
+            width: 10vw;
+            height: 7vh;
+            font-size: 1.5rem;
+          }
+        }
+
+        .features {
+          gap: 5vw;
+
+          .feature {
+            .featureNumber {
+              font-size: 2.5vw;
+            }
+
+            .featureSecondary {
+              font-size: 1.2vw;
+            }
+          }
+        }
+      }
+
+      .heroHeader {
+        .heroImages {
+          width: 45vw;
+          gap: 3vw;
+          margin-left: 3vw;
+
+          .heroImage1 {
+            .image1 {
+              width: 22vw;
+              height: 22vw;
+            }
+
+            &::after {
+              height: 6vw;
+              bottom: 4vw;
+            }
+          }
+
+          .heroImage2 {
+            .image2 {
+              width: 18vw;
+              height: 18vw;
+            }
+
+            .heroBackground {
+              bottom: 50vh;
+              right: -4vw;
+              transform: scale(2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    .heroContainer {
+      .heroHeader {
+        .heroImages {
+          .heroImage1 {
+            .image1 {
+              width: 208px;
+              height: 208px;
+            }
+          }
+
+          .heroImage2 {
+            .heroBackground {
+              top: -80px;
+              svg {
+                width: 190px;
+                height: 310px;
+              }
+            }
+
+            .image2 {
+              width: 170px;
+              height: 170px;
+            }
+
+            .heroArrow {
+              svg {
+                width: 58px;
+                height: 58px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hero {
+
+    .heroContainer {
+      .heroText {
+        .title {
+          font-size: 55px;
+          width: auto;
+        }
+
+        .description {
+          width: auto;
+          font-size: 15px;
+        }
+
+        .features {
+          gap: 30px;
+        }
+      }
+
+      .heroHeader {
+        display: flex;
+        align-items: center;
+        .heroImages {
+          .heroImage2 {
+            .heroBackground {
+              top: -95px;
+              left: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 675px) {
+  .hero {
+
+    .heroContainer {
+      flex-wrap: wrap;
+      padding: 0 30px;
+      justify-content: center;
+
+      .heroText {
+        .line {
+          width: 100%;
+          top: -60px;
+          border-radius: 1px;
+        }
+
+        .over {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+        }
+
+        .title {
+          margin: 0 auto;
+          font-size: 47px;
+          max-width: 310px;
+          text-align: center;
+        }
+
+        .buttonGroup {
+          margin-top: 40px;
+          justify-content: center;
+
+          .exploreButton,
+          .createButton {
+            padding: 8px 14px;
+          }
+
+          .exploreButton {
+            height: 50px;
+            width: 130px;
+            font-size: 11px;
+          }
+
+          .createButton {
+            height: 50px;
+            width: 100px;
+            font-size: 11px;
+          }
+        }
+
+        .description {
+          margin: 10px auto 0 auto;
+          max-width: 310px;
+          font-size: 11px;
+          text-align: center;
+        }
+
+        .features {
+          display: none;
+        }
+      }
+
+      .heroHeader {
+        justify-content: center;
+        width: 100%;
+
+        .heroImages {
+          width: auto;
+          margin: 100px 0 0 0;
+
+          .heroImage1 {
+            .image1 {
+              width: 208px;
+              height: 208px;
+            }
+          }
+
+          .heroImage2 {
+            .image2 {
+              width: 170px;
+              height: 170px;
+            }
+
+            .heroBackground {
+              left: 95px;
+              top: -45px;
+              svg {
+                width: 90px;
+                height: 210px;
+              }
+            }
+
+            .heroArrow {
+              svg {
+                width: 58px;
+                height: 58px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .hero {
+    .heroContainer {
+      .heroHeader {
+        justify-content: left;
+
+        .heroImages {
+          .heroImage2 {
+
+            .heroArrow {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }

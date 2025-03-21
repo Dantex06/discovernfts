@@ -10,22 +10,29 @@
     align-items: center;
 
     .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      .logoInfo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
 
-      .title {
-        font-family: Poppins-semibold, sans-serif;
-        font-size: 30px;
-        color: var(--white);
+        .title {
+          font-family: Poppins-semibold, sans-serif;
+          font-size: 30px;
+          color: var(--white);
+        }
+      }
+      .mobileIcons {
+        display: none;
       }
     }
 
     .navigation {
       display: flex;
+      align-items: center;
       gap: 70px;
 
       .navigateText {
+        text-align: center;
         font-family: Inter-medium, sans-serif;
         font-size: 18px;
         color: var(--text-gray-light);
@@ -45,11 +52,13 @@
     height: 25px;
     justify-content: space-between;
     align-items: center;
+
     .lowerInfo {
       font-family: Inter-Medium, sans-serif;
       font-size: 17px;
       color: var(--text-gray);
     }
+
     .icons {
       display: flex;
       height: 25px;
@@ -57,4 +66,107 @@
       align-items: center;
     }
   }
+}
+
+@media screen and (min-width: 1921px)  {
+  .footer {
+    height: 20vw;
+    padding: 5vw 5vw 5vw 4.5vw;
+
+    .unit {
+      .logo {
+        .logoInfo {
+          gap: 0.6vw;
+
+          .title {
+            font-size: 1.8vw;
+          }
+        }
+      }
+
+      .navigation {
+        gap: 4vw;
+
+        .navigateText {
+          font-size: 1.1vw;
+        }
+      }
+    }
+
+    .line {
+      margin: 1.5vw 0 3vw 0;
+    }
+
+    .lower {
+      height: 1.5vw;
+
+      .lowerInfo {
+        font-size: 1vw;
+      }
+
+      .icons {
+        gap: 3vw;
+        svg {
+          height: 1.5vw;
+          width: 1.5vw;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  .footer {
+    height: 390px;
+    padding: 40px 30px 90px 30px;
+    .unit {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+
+      .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mobileIcons {
+          display: flex;
+          height: 15px;
+          gap: 20px;
+          align-items: center;
+        }
+        .logoInfo {
+          svg {
+            height: 42px;
+            width: 42px;
+          }
+          .title {
+            font-size: 20px;
+          }
+        }
+      }
+      .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        .navigateText {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .line {
+      margin: 25px 0 25px 0;
+    }
+
+    .lower {
+      justify-content: center;
+      .icons {
+        display: none;
+      }
+    }
+  }
+
 }

@@ -11,8 +11,16 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.unit}>
                 <div className={styles.logo}>
-                    <Icon/>
-                    <p className={styles.title}>DiveSea</p>
+                    <div className={styles.logoInfo}>
+                        <Icon/>
+                        <p className={styles.title}>DiveSea</p>
+                    </div>
+                    <div className={styles.mobileIcons}>
+                        <Instagram/>
+                        <Linkedin/>
+                        <Facebook/>
+                        <Twitter/>
+                    </div>
                 </div>
                 <div className={styles.navigation}>
                     <p className={styles.navigateText}>Privacy Policy</p>
@@ -20,6 +28,7 @@ const Footer = () => {
                     <p className={styles.navigateText}>About Us</p>
                     <p className={styles.navigateText}>Contact</p>
                 </div>
+
             </div>
             <div className={styles.line}></div>
             <div className={styles.lower}>

@@ -61,10 +61,49 @@
   margin-top: 0;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background: var(--background-default);
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+@media screen and (min-width: 1921px) {
+  .header {
+    padding: 0 5vw;
+    height: 6vh;
+    margin-top: 4vh;
+
+    .leftSide {
+      gap: 3vw;
+
+      .logo {
+        width: 4vw;
+        height: 4vw;
+        svg {
+          width: 4vw;
+          height: 4vh;
+        }
+      }
+
+      .navigations {
+        width: 25vw;
+        gap: 3vw;
+
+        .navItem {
+          font-size: 1.2vw;
+        }
+      }
+    }
+    .button {
+      height: 5vh;
+      width: 20vh;
+      font-size: 1.5rem;
+    }
+  }
+
+  .header.sticky {
+    height: 10vh;
+  }
 }
 
 @media screen and (max-width: 1024px) {
